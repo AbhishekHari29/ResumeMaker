@@ -1,0 +1,442 @@
+<html>
+    <head>
+        <title>Create Resume</title>
+    <link rel="stylesheet" type="text/css" href="../css/FormStyle.css">
+    <script type="text/javascript" src="../javascript/FormSend.js"></script>
+    </head>
+    <body>
+        <ul class="navbar header"> 
+            <li style="float:left;"><a class="button" href="ResumeForm.html">Create Resume</a></li>
+            <li style="float:right;"><a class="button" href="#activity_pane">Interest</a></li>
+            <li style="float:right;"><a class="button" href="#skill_pane">Skill</a></li>
+            <li style="float:right;"><a class="button" href="#education_pane">Education</a></li>
+            <li style="float:right;"><a class="button" href="#work_pane">Work</a></li>
+            <li style="float:right;"><a class="button" href="#personal_pane">Personal</a></li>
+        </ul>
+        <form name="ResumeForm" action="ResumeFormat.html">
+            <p id="personal_pane" class="caption">Personal Details</p>
+            <div class="container">
+                First Name
+                <input type="text" id="fname" name="fname" placeholder="Tony" >
+                Last Name
+                <input type="text" id="lname" name="lname" placeholder="Stark">
+                Date Of Birth
+                <input type="date" id="dob" name="dob">
+                Gender<br>
+                <input type="radio" id="gender" name="gender" value="Male" style="margin: 12px 5px 12px 20px;">
+                Male
+                <input type="radio" id="gender" name="gender" value="Female" style="margin: 12px 5px 12px 20px;">
+                Female<br>
+                Address
+                <textarea id="address" name="address" placeholder="200 Park Avenue , Manhattan"></textarea>
+                City
+                <input type="text" id="city" name="city" placeholder="Los Angeles">
+                ZIP Code
+                <input type="text" id="zipcode" name="zipcode" placeholder="902660">
+                Country
+                <select id="country">
+                    <option value="AF">Afghanistan</option>
+                    <option value="AL">Albania</option>
+                    <option value="DZ">Algeria</option>
+                    <option value="AQ">Antarctica</option>
+                    <option value="AU">Australia</option>
+                    <option value="BD">Bangladesh</option>
+                    <option value="BE">Belgium</option>
+                    <option value="BR">Brazil</option>
+                    <option value="CA">Canada</option>
+                    <option value="CN">China</option>
+                    <option value="CO">Colombia</option>
+                    <option value="CZ">Czech Republic</option>
+                    <option value="DK">Denmark</option>
+                    <option value="EG">Egypt</option>
+                    <option value="FI">Finland</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                    <option value="GR">Greece</option>
+                    <option value="GL">Greenland</option>
+                    <option value="HK">Hong Kong</option>
+                    <option value="IS">Iceland</option>
+                    <option selected="selected" value="IN">India</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IQ">Iraq</option>
+                    <option value="IE">Ireland</option>
+                    <option value="IL">Israel</option>
+                    <option value="IT">Italy</option>
+                    <option value="JP">Japan</option>
+                    <option value="KR">Korea</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="MX">Mexico</option>
+                    <option value="MA">Morocco</option>
+                    <option value="MM">Myanmar</option>
+                    <option value="NP">Nepal</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="NZ">New Zealand</option>
+                    <option value="NG">Nigeria</option>
+                    <option value="NO">Norway</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="PE">Peru</option>
+                    <option value="PH">Philippines</option>
+                    <option value="PL">Poland</option>
+                    <option value="PT">Portugal</option>
+                    <option value="QA">Qatar</option>
+                    <option value="RO">Romania</option>
+                    <option value="RU">Russian Federation</option>
+                    <option value="SA">Saudi Arabia</option>
+                    <option value="SG">Singapore</option>
+                    <option value="ZA">South Africa</option>
+                    <option value="ES">Spain</option>
+                    <option value="LK">Sri Lanka</option>
+                    <option value="SE">Sweden</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="TW">Taiwan</option>
+                    <option value="TH">Thailand</option>
+                    <option value="TR">Turkey</option>
+                    <option value="UA">Ukraine</option>
+                    <option value="AE">United Arab Emirates</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="US">United States</option>
+<option value="ZW">Zimbabwe</option>
+                </select>
+                Email
+                <input type="email" id="emailid" name="emailid" placeholder="tonystark@startindustries.com">
+                Phone
+                <input type="text" id="phone" name="phone" placeholder="9876543210">
+                Profile Picture<br>
+                <input type="text" id="pro_pic" name="pro_pic" placeholder="Path of the Image File or URL">
+            </div>
+            <p id="work_pane" class="caption">Work Experience</p>
+            <div class="container">
+                <p style="font-weight: bold;">Experience 1</p>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            Job Title
+                            <input type="text" id="jobtitle" name="jobtitle" placeholder="Web Designer">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            Company Name
+                            <input type="text" id="cmpname" name="cmpname" placeholder="IBM">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            City
+                            <input type="text" id="cmpcity" name="cmpcity" placeholder="Chennai">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            State
+                            <input type="text" id="cmpstate" name="cmpstate" placeholder="Tamil Nadu">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Start Date
+                            <input type="date" id="strtdate" name="strtdate">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            End Date
+                            <input type="date" id="enddate" name="enddate">
+                        </td>
+                    </tr>
+                </table>
+                Job Description
+                <textarea id="jobdes" name="jobdes" placeholder="Tell us something about your Job"></textarea>
+                <p style="font-weight: bold;">Experience 2</p>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            Job Title
+                            <input type="text" id="jobtitle" name="jobtitle" placeholder="Web Designer">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            Company Name
+                            <input type="text" id="cmpname" name="cmpname" placeholder="IBM">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            City
+                            <input type="text" id="cmpcity" name="cmpcity" placeholder="Chennai">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            State
+                            <input type="text" id="cmpstate" name="cmpstate" placeholder="Tamil Nadu">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Start Date
+                            <input type="date" id="strtdate" name="strtdate">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            End Date
+                            <input type="date" id="enddate" name="enddate">
+                        </td>
+                    </tr>
+                </table>
+                Job Description
+                <textarea id="jobdes" name="jobdes" placeholder="Tell us something about your Job"></textarea>
+            </div>
+
+
+            <p id="education_pane" class="caption">Educational Details</p>
+            <div class="container">
+                <p style="font-weight: bold;">Post Graduate</p>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            Field of Study
+                            <input type="text" id="pg_field" name="pg_field" placeholder="Engineering">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            Degree
+                            <select id="pg_degree" name="pg_degree">
+                                <option selected value="">Mtech</option>
+                                <option value="ME">ME</option>
+                                <option value="MBA">MBA</option>
+                                <option value="MSc">MSc</option>
+                                <option value="MA">MA</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            City
+                            <input type="text" id="pg_city" name="pg_city" placeholder="Chennai">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            State
+                            <input type="text" id="pg_state" name="pg_state" placeholder="Tamil Nadu">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            School Name
+                            <input type="text" id="pg_school" name="pg_school" placeholder="VIT University">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            Graduation Date
+                            <input type="date" id="pg_grad" name="pg_grad"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="right"><input type="checkbox" id="pg_grad_now" name="pg_grad_now"> Still Graduating</td>
+                    </tr>
+                </table>
+                <p style="font-weight: bold;">Under Graduate</p>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            Field of Study
+                            <input type="text" id="ug_field" name="ug_field" placeholder="Engineering">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            Degree
+                            <select id="ug_degree" name="ug_degree">
+                                <option selected value="">Btech</option>
+                                <option value="BE">BE</option>
+                                <option value="BBA">BBA</option>
+                                <option value="BSc">BSc</option>
+                                <option value="BA">BA</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            City
+                            <input type="text" id="ug_city" name="ug_city" placeholder="Chennai">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            State
+                            <input type="text" id="ug_state" name="ug_state" placeholder="Tamil Nadu">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            School Name
+                            <input type="text" id="ug_school" name="ug_school" placeholder="VIT University">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            Graduation Date
+                            <input type="date" id="ug_grad" name="ug_grad">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="right"><input type="checkbox" id="ug_grad_now" name="ug_grad_now"> Still Graduating</td>
+                    </tr>
+                </table>
+                <p style="font-weight: bold;">High School</p>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            City
+                            <input type="text" id="hs_city" name="hs_city" placeholder="Chennai">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            State
+                            <input type="text" id="hs_state" name="hs_state" placeholder="Tamil Nadu">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            School Name
+                            <input type="text" id="hs_school" name="hs_school" placeholder="VIT University">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            Graduation Date
+                            <input type="date" id="hs_grad" name="hs_grad">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="right"><input type="checkbox" id="hs_grad_now" name="hs_grad_now"> Still Graduating</td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <p id="skill_pane" class="caption">Skills</p>
+            <div class="container">
+                <p style="font-weight: bold;">Personal Skills</p>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            Skill 1
+                            <input type="text" id="per_skill" name="per_skill" placeholder="Creativity">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            Level
+                            <input type="range" class="slider" id="per_skl_lvl" name="per_skl_lvl" min="1" max="10" value="5">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Skill 2
+                            <input type="text" id="per_skill" name="per_skill" placeholder="Communication">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            Level
+                            <input type="range" class="slider" id="per_skl_lvl" name="per_skl_lvl" min="1" max="10" value="5">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Skill 3
+                            <input type="text" id="per_skill" name="per_skill" placeholder="Team work">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            Level
+                            <input type="range" class="slider" id="per_skl_lvl" name="per_skl_lvl" min="1" max="10" value="5">
+                        </td>
+                    </tr>
+                </table>
+                <p style="font-weight: bold;">Professional Skills</p>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            Skill 1
+                            <input type="text" id="pro_skill" name="pro_skill" placeholder="Programming">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            Level
+                            <input type="range" class="slider" id="pro_skl_lvl" name="pro_skl_lvl" min="1" max="10" value="5">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Skill 2
+                            <input type="text" id="pro_skill" name="pro_skill" placeholder="Management">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            Level
+                            <input type="range" class="slider" id="pro_skl_lvl" name="pro_skl_lvl" min="1" max="10" value="5">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Skill 3
+                            <input type="text" id="pro_skill" name="pro_skill" placeholder="Marketing">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            Level
+                            <input type="range" class="slider" id="pro_skl_lvl" name="pro_skl_lvl" min="1" max="10" value="5">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p id="activity_pane" class="caption">Activities/Interest</p>
+            <div class="container">
+                <p style="font-weight: bold;">Languages Known</p>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            <input type="text" id="language" name="language" placeholder="Language 1">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            <input type="text" id="language" name="language" placeholder="Language 2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="language" name="language" placeholder="Language 3">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            <input type="text" id="language" name="language" placeholder="Language 4">
+                        </td>
+                    </tr>
+                </table>
+                <p style="font-weight: bold;">Hobbies</p>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            <input type="text" id="hobby" name="hobby" placeholder="Hobby 1">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            <input type="text" id="hobby" name="hobby" placeholder="Hobby 2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="hobby" name="hobby" placeholder="Hobby 3">
+                        </td>
+                        <td style="width: 20px;"></td>
+                        <td>
+                            <input type="text" id="hobby" name="hobby" placeholder="Hobby 4">
+                        </td>
+                    </tr>
+                </table>
+                <p style="font-weight: bold;">Awards/Achievements</p>
+                <textarea id="award" name="award" placeholder="Award/Achievement - 1"></textarea>
+                <textarea id="award" name="award" placeholder="Award/Achievement - 2"></textarea>
+                <textarea id="award" name="award" placeholder="Award/Achievement - 3"></textarea>
+            </div>
+            <p class="caption">Personal Summary</p>
+            <div class="container">
+                <textarea id="per_sum" name="per_sum" rows="5" placeholder="Tell us something about yourself"></textarea>
+            </div>
+            <p class="caption"><input type="submit" value="Create Resume" onclick="FormSend();ResumeFormat.html;"></p>
+        </form>
+    </body>
+</html>
